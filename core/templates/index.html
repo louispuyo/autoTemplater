@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" link="css/themes/styles_basics.css">
+
+    <title>application</title>
+</head>
+<body>
+
+    <div id="app" style="margin:5%">
+
+        <h1 style="font-size: larger;">Menu</h1>
+        
+        <hr>    
+        
+        {% include 'css/index_theme.css.html' %}
+        
+        {% for a in request %}
+        
+        <li>{{a}}</li>
+        
+        {% endfor %}
+    </div>
+
+
+</body></html>
